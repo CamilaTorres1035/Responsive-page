@@ -1,0 +1,285 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.color-acento{
+    color: blueviolet;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.8em;
+}
+h3{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+ul{
+    list-style: none;
+}
+li{
+    font-size: 1.25em;
+}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+button:hover{
+    background-color: rgb(101,33,165);
+}
+.container{
+    min-width: none;
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(248, 248, 248);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), 
+    url("../img/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+
+#somos .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#programas .container{
+    padding: 200px 0px;
+}
+#programas h2{
+    margin-top: 0;
+}
+#programas p{
+    display: none;
+}
+#programas .carta{
+    padding: 50px;
+    margin: 18px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), 
+    url("../img/img1.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), 
+    url("../img/img2.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), 
+    url("../img/img3.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#aplica{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(30,30,30);
+    color: white;
+}
+#aplica h2{
+    font-size: 9vw;
+}
+#aplica button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer p{
+    margin: 0;
+    color: gray;
+    padding: 12px;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .logo{
+        font-size: 0.8em;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        font-size: 0.5em;
+    }
+
+    #somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos h2{
+        margin-top: 0;
+    }
+    #somos .img{
+        height: 400px;
+        width: 300px;
+        background-image: url(../img/img4.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #programas p{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 0.5em;
+    }
+    #programas h3{
+        margin-top: 0;
+        font-size: 1.2em;
+        padding-bottom: 15px;
+    }
+    #programas .carta{
+        padding: 68px;
+        background-size: 100% 120px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    
+    #caracteristicas .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #caracteristicas .img{
+        height: 300px;
+        width: 300px;
+        background-image: url(../img/img5.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    
+    #aplica h2{
+        font-size: 3em;
+    }
+
+    #aplica button{
+        font-size: 1em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
